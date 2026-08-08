@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — Elite Alpha</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .contato-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .contato-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .contato-card {
+            background-color: #1a212e;
+            border: 1px solid #2a3447;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .contato-card h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .contato-card p {
+            color: #8b9bb4;
+            font-size: 0.95rem;
+        }
+        .form-section {
+            background-color: #1a212e;
+            border: 1px solid #2a3447;
+            padding: 30px;
+            border-radius: 6px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #12151c;
+            border: 1px solid #2a3447;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ELITE <span>ALPHA</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="juridico.html">Orientações Jurídicas</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding: 60px 20px;">
+        <h1>CANAIS DE <span>CONTATO</span></h1>
+        <p>Fale diretamente com nossa equipe de suporte, tire dúvidas ou acesse nossa comunidade exclusiva.</p>
+    </section>
+
+    <div class="contato-container">
+        <div class="contato-grid">
+            <div class="contato-card">
+                <h3>Suporte ao Aluno</h3>
+                <p>Atendimento prioritário para dúvidas sobre as aulas, cronogramas e plataforma.</p>
+            </div>
+            <div class="contato-card">
+                <h3>Comunidade Exclusiva</h3>
+                <p>Grupo fechado para interação entre membros de nível de elite e networking.</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3 style="color: #ffffff; margin-bottom: 15px; font-size: 1.4rem;">Envie sua Mensagem</h3>
+            <p style="color: #8b9bb4; margin-bottom: 25px; font-size: 0.95rem;">Preencha o formulário abaixo e nossa equipe retornará em breve.</p>
+            
+            <form>
+                <div class="form-group">
+                    <label>Seu Nome</label>
+                    <input type="text" placeholder="Digite seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label>E-mail ou WhatsApp</label>
+                    <input type="text" placeholder="Digite seu melhor contato">
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea placeholder="Escreva sua dúvida ou mensagem..."></textarea>
+                </div>
+                <button type="submit" class="btn-gold" style="border: none; cursor: pointer; width: 100%; text-align: center;">ENVIAR MENSAGEM</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
