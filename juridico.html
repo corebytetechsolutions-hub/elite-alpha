@@ -6,57 +6,42 @@
     <title>Orientações Jurídicas — Elite Alpha</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .grid-juridico {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 40px auto;
+        .juridico-container {
+            max-width: 900px;
+            margin: 50px auto;
             padding: 0 20px;
         }
-        .card-juridico {
+        .aviso-legal-box {
             background-color: #1a212e;
             border: 1px solid #2a3447;
+            border-left: 4px solid #d4af37;
             padding: 25px;
             border-radius: 6px;
-        }
-        .card-juridico h3 {
-            color: #d4af37;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-        .card-juridico p {
+            margin-bottom: 40px;
             color: #8b9bb4;
             font-size: 0.95rem;
+            line-height: 1.6;
         }
-        .form-section {
-            max-width: 800px;
-            margin: 50px auto;
+        .juridico-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .juridico-card {
             background-color: #1a212e;
             border: 1px solid #2a3447;
             padding: 30px;
             border-radius: 6px;
         }
-        .form-group {
-            margin-bottom: 20px;
+        .juridico-card h3 {
+            color: #d4af37;
+            font-size: 1.25rem;
+            margin-bottom: 12px;
         }
-        .form-group label {
-            display: block;
-            color: #ffffff;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            background-color: #12151c;
-            border: 1px solid #2a3447;
-            color: #ffffff;
-            border-radius: 4px;
-        }
-        .form-group textarea {
-            height: 120px;
-            resize: vertical;
+        .juridico-card p {
+            color: #8b9bb4;
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -74,56 +59,36 @@
     </header>
 
     <section class="hero" style="padding: 60px 20px;">
-        <h1>ORIENTAÇÕES <span>JURÍDICAS</span></h1>
-        <p>Apoio estratégico, blindagem e orientação especializada para homens diante de conflitos legais.</p>
+        <h1>DIRECIONAMENTO E <span>SEGURANÇA</span></h1>
+        <p>Informações estruturadas e suporte de conscientização voltados para a blindagem e proteção masculina.</p>
     </section>
 
-    <div class="grid-juridico">
-        <div class="card-juridico">
-            <h3>Divórcio</h3>
-            <p>Estratégias de proteção patrimonial, condução sóbria e salvaguarda dos direitos parentais durante o processo de separação[cite: 1].</p>
-        </div>
-        <div class="card-juridico">
-            <h3>Alienação Parental</h3>
-            <p>Identificação de manobras de afastamento, montagem de dossiês probatórios e medidas legais rígidas para blindar o vínculo com os filhos[cite: 1].</p>
-        </div>
-        <div class="card-juridico">
-            <h3>Falsas Acusações</h3>
-            <p>Protocolos imediatos de defesa técnica, preservação estrita de provas materiais e contramedidas legais contra denúncias infundadas[cite: 1].</p>
-        </div>
-        <div class="card-juridico">
-            <h3>Problemas com Advogados de Defesa</h3>
-            <p>Orientação sobre como auditar a atuação do seu patrono, acompanhar prazos processuais e exigir transparência total no seu caso[cite: 1].</p>
-        </div>
-        <div class="card-juridico">
-            <h3>Dificuldades e Denúncias na Justiça</h3>
-            <p>Superação de barreiras institucionais, morosidade processual e garantia de imparcialidade nos tribunais[cite: 1].</p>
-        </div>
-        <div class="card-juridico">
-            <h3>Direitos Internacionais</h3>
-            <p>Canal de orientação para homens que enfrentam barreiras e precisam de direcionamento alinhado a parâmetros internacionais[cite: 1].</p>
-        </div>
-    </div>
-
-    <div class="form-section">
-        <h3 style="color: #ffffff; margin-bottom: 10px; font-size: 1.4rem;">Teve seus direitos negados ou dificuldades na justiça?</h3>
-        <p style="color: #8b9bb4; margin-bottom: 25px; font-size: 0.95rem;">Preencha o formulário abaixo caso você tenha seus direitos negados ou enfrente barreiras processuais. Entremos em contato para orientar você juridicamente[cite: 1].</p>
+    <div class="juridico-container">
         
-        <form>
-            <div class="form-group">
-                <label>Seu Nome Completo</label>
-                <input type="text" placeholder="Digite seu nome">
+        <!-- Aviso de Isenção / Caráter Educacional -->
+        <div class="aviso-legal-box">
+            <strong style="color: #ffffff; display: block; margin-bottom: 8px;">Aviso Importante:</strong>
+            Os conteúdos e diretrizes apresentados nesta seção possuem caráter estritamente educacional, informativo e de conscientização estratégica. Eles não substituem a consultoria jurídica formal prestada por um advogado devidamente inscrito na OAB.
+        </div>
+
+        <h3 style="color: #ffffff; font-size: 1.6rem; margin-bottom: 25px; text-align: center;">Áreas de Foco e Conscientização</h3>
+
+        <!-- Grid de Tópicos Jurídicos -->
+        <div class="juridico-grid">
+            <div class="juridico-card">
+                <h3>Blindagem Patrimonial</h3>
+                <p>Estratégias preventivas e conscientização sobre a gestão de riscos e proteção de bens em cenários de reestruturação familiar ou empresarial.</p>
             </div>
-            <div class="form-group">
-                <label>E-mail ou WhatsApp para Contato</label>
-                <input type="text" placeholder="Digite seu contato">
+            <div class="juridico-card">
+                <h3>Apoio em Processos de Divórcio</h3>
+                <p>Direcionamento focado em manter a sobriedade emocional, resguardar direitos fundamentais e agir de maneira racional diante de litígios.</p>
             </div>
-            <div class="form-group">
-                <label>Relate sua Situação / Dificuldade na Justiça</label>
-                <textarea placeholder="Descreva detalhadamente o seu caso..."></textarea>
+            <div class="juridico-card">
+                <h3>Alienação Parental</h3>
+                <p>Conscientização e amparo informacional para a defesa rigorosa do convívio familiar equilibrado e do vínculo saudável com os filhos.</p>
             </div>
-            <button type="submit" class="btn-gold" style="border: none; cursor: pointer; width: 100%; text-align: center;">SOLICITAR ORIENTAÇÃO RESERVADA</button>
-        </form>
+        </div>
+
     </div>
 
     <footer>

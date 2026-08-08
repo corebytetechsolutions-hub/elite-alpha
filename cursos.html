@@ -3,64 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos — Elite Alpha & Corebyte Academy</title>
+    <title>Cursos — Elite Alpha</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .container {
+        .cursos-container {
             max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
-        .section-title {
-            color: #ffffff;
+        .curso-destaque {
+            background-color: #1a212e;
+            border: 1px solid #d4af37;
+            padding: 35px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
+        }
+        .curso-destaque h2 {
+            color: #d4af37;
             font-size: 1.8rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #d4af37;
-            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .curso-destaque p {
+            color: #8b9bb4;
+            font-size: 1.05rem;
+            margin-bottom: 25px;
+        }
+        .corebyte-section {
+            background: linear-gradient(135deg, #12151c 0%, #1a212e 100%);
+            border: 1px solid #2a3447;
+            padding: 35px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .corebyte-section h3 {
+            color: #ffffff;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        .corebyte-section h3 span {
+            color: #d4af37;
+        }
+        .corebyte-section p {
+            color: #8b9bb4;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto 25px auto;
         }
         .modulos-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
-            margin-bottom: 50px;
+            margin-top: 30px;
         }
         .modulo-card {
-            background-color: #1a212e;
+            background-color: #12151c;
             border: 1px solid #2a3447;
             padding: 20px;
-            border-radius: 6px;
+            border-radius: 4px;
         }
         .modulo-card h4 {
-            color: #d4af37;
-            margin-bottom: 10px;
+            color: #ffffff;
+            margin-bottom: 8px;
             font-size: 1.1rem;
         }
-        .modulo-card ul {
+        .modulo-card p {
             color: #8b9bb4;
-            padding-left: 18px;
             font-size: 0.9rem;
-        }
-        .modulo-card li {
-            margin-bottom: 5px;
-        }
-        .corebyte-box {
-            background: linear-gradient(135deg, #1b2230 0%, #161b24 100%);
-            border: 2px solid #d4af37;
-            padding: 40px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .corebyte-box h3 {
-            color: #ffffff;
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-        }
-        .corebyte-box p {
-            color: #8b9bb4;
-            font-size: 1.05rem;
-            max-width: 700px;
-            margin: 0 auto 25px auto;
         }
     </style>
 </head>
@@ -78,113 +88,56 @@
     </header>
 
     <section class="hero" style="padding: 60px 20px;">
-        <h1>VITRINE DE <span>CURSOS</span></h1>
-        <p>Desenvolvimento pessoal, alta performance masculina e capacitação profissional de nível superior.</p>
+        <h1>FORMAÇÕES E <span>TREINAMENTOS</span></h1>
+        <p>Conteúdos estruturados para transformar sua mentalidade, blindar sua vida e elevar seus resultados ao nível de elite.</p>
     </section>
 
-    <div class="container">
-        <h2 class="section-title">Método Elite Alpha (Do Zero à Alta Performance)</h2>
-        <p style="color: #c9d1d9; margin-bottom: 30px;">O objetivo é criar uma jornada de transformação onde você entra desorganizado e sem foco, e sai com uma mentalidade forte, produtiva e orientada a resultados[cite: 1].</p>
-
-        <div class="modulos-grid">
-            <div class="modulo-card">
-                <h4>Módulo 0: Boas-Vindas</h4>
-                <ul>
-                    <li>Apresentação e história do curso</li>
-                    <li>Cronograma e ordem das aulas</li>
-                    <li>Comunidade exclusiva e regras</li>
-                    <li>Contrato consigo mesmo</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 1: Mentalidade Alpha</h4>
-                <ul>
-                    <li>O que é a Mentalidade Alpha</li>
-                    <li>Por que a maioria fracassa</li>
-                    <li>Responsabilidade Total</li>
-                    <li>Mapa da Vida Atual</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 2: Procrastinação</h4>
-                <ul>
-                    <li>Causas da procrastinação</li>
-                    <li>Destruindo distrações</li>
-                    <li>Controle de celular e redes</li>
-                    <li>Desafio 7 Dias Sem Procrastinação</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 3: Disciplina Extrema</h4>
-                <ul>
-                    <li>O Poder da Disciplina</li>
-                    <li>Criando hábitos poderosos</li>
-                    <li>Rotina de alta performance</li>
-                    <li>Método dos 30 Dias</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 4: Foco e Produtividade</h4>
-                <ul>
-                    <li>Como manter foco absoluto</li>
-                    <li>Gestão de tempo e Pomodoro</li>
-                    <li>Planejamento semanal/mensal</li>
-                    <li>Construindo Agenda Alpha</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 5: Controle Emocional</h4>
-                <ul>
-                    <li>Entendendo suas emoções</li>
-                    <li>Controle da ansiedade e raiva</li>
-                    <li>Fortalecimento mental</li>
-                    <li>Diário de Controle Emocional</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 6: Performance Física</h4>
-                <ul>
-                    <li>Corpo e mente juntos</li>
-                    <li>Sono e recuperação ideal</li>
-                    <li>Alimentação e exercícios</li>
-                    <li>Plano Físico Alpha</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 7: Finanças e Vida</h4>
-                <ul>
-                    <li>Mentalidade financeira</li>
-                    <li>Controle e metas financeiras</li>
-                    <li>Planejamento de carreira</li>
-                    <li>Mapa Financeiro Alpha</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 8: Estudos e Evolução</h4>
-                <ul>
-                    <li>Aprender mais rápido</li>
-                    <li>Técnicas de memorização</li>
-                    <li>Leitura eficiente</li>
-                    <li>Plano de Desenvolvimento Pessoal</li>
-                </ul>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 9: Projeto Elite Alpha</h4>
-                <ul>
-                    <li>Revisão completa</li>
-                    <li>Metas para 1 ano e execução</li>
-                    <li>Como nunca voltar ao início</li>
-                    <li>Cerimônia de Conclusão</li>
-                </ul>
-            </div>
+    <div class="cursos-container">
+        
+        <!-- Curso Principal com Link da Hotmart -->
+        <div class="curso-destaque">
+            <h2>Método Elite Alpha (Formação Completa)</h2>
+            <p>O treinamento definitivo focado em mentalidade de alta performance, estratégia, posicionamento e blindagem pessoal. Do Módulo 0 ao Módulo 9 com acesso completo à metodologia.</p>
+            
+            <a href="https://go.hotmart.com/B106042773F" target="_blank" class="btn-gold" style="text-align: center; display: block; margin-top: 20px; text-decoration: none;">GARANTIR MINHA VAGA NA HOTMART</a>
         </div>
 
         <!-- Seção Integrada Corebyte Academy -->
-        <div class="corebyte-box">
-            <h3>Corebyte Academy — Cursos e Formação</h3>
-            <p>Amplie suas competências técnicas e profissionais com as trilhas especializadas de tecnologia e formação da Corebyte Academy.</p>
-            <a href="https://corebytetech.com.br/courses.html" target="_blank" class="btn-gold">ACESSAR CURSOS COREBYTE ACADEMY</a>
+        <div class="corebyte-section">
+            <h3>Vitrine de Cursos <span>Corebyte Academy</span></h3>
+            <p>Explore também a plataforma parceira e acesse formações completas em tecnologia, desenvolvimento e inovação digital.</p>
+            <a href="https://corebytetech.com.br/courses.html" target="_blank" class="btn-gold" style="text-decoration: none; display: inline-block;">ACESSAR COREBYTE ACADEMY</a>
         </div>
+
+        <h3 style="color: #ffffff; margin-bottom: 20px; font-size: 1.5rem; text-align: center;">Grade Curricular do Treinamento</h3>
+
+        <div class="modulos-grid">
+            <div class="modulo-card">
+                <h4>Módulo 01</h4>
+                <p>Fundamentos da Mentalidade de Elite e quebra de crenças limitantes.</p>
+            </div>
+            <div class="modulo-card">
+                <h4>Módulo 02</h4>
+                <p>Estratégias avançadas de posicionamento e alta performance pessoal.</p>
+            </div>
+            <div class="modulo-card">
+                <h4>Módulo 03</h4>
+                <p>Inteligência emocional e blindagem contra interferências externas.</p>
+            </div>
+            <div class="modulo-card">
+                <h4>Módulo 04</h4>
+                <p>Gestão de riscos, segurança jurídica e proteção patrimonial.</p>
+            </div>
+            <div class="modulo-card">
+                <h4>Módulo 05</h4>
+                <p>Liderança, tomada de decisão sob pressão e foco estratégico.</p>
+            </div>
+            <div class="modulo-card">
+                <h4>Módulo 06 a 09</h4>
+                <p>Consolidação de hábitos de alta performance e expansão contínua.</p>
+            </div>
+        </div>
+
     </div>
 
     <footer>

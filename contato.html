@@ -96,27 +96,59 @@
             <h3 style="color: #ffffff; margin-bottom: 15px; font-size: 1.4rem;">Envie sua Mensagem</h3>
             <p style="color: #8b9bb4; margin-bottom: 25px; font-size: 0.95rem;">Preencha o formulário abaixo e nossa equipe retornará em breve.</p>
             
-            <form>
+            <form id="formContato">
                 <div class="form-group">
                     <label>Seu Nome</label>
-                    <input type="text" placeholder="Digite seu nome completo">
+                    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
                 </div>
                 <div class="form-group">
                     <label>E-mail ou WhatsApp</label>
-                    <input type="text" placeholder="Digite seu melhor contato">
+                    <input type="text" id="contato" placeholder="Digite seu melhor contato" required>
                 </div>
                 <div class="form-group">
                     <label>Mensagem</label>
-                    <textarea placeholder="Escreva sua dúvida ou mensagem..."></textarea>
+                    <textarea id="mensagem" placeholder="Escreva sua dúvida ou mensagem..." required></textarea>
                 </div>
                 <button type="submit" class="btn-gold" style="border: none; cursor: pointer; width: 100%; text-align: center;">ENVIAR MENSAGEM</button>
             </form>
+
+            <!-- Mensagem de Sucesso (Oculta por padrão) -->
+            <div id="mensagemSucesso" style="display: none; background-color: #1b3022; border: 1px solid #2ecc71; color: #2ecc71; padding: 15px; border-radius: 4px; text-align: center; margin-top: 20px; font-weight: bold;">
+                Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.
+            </div>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.getElementById('formContato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o recarregamento da página
+
+            // Captura os valores dos campos
+            const nome = document.getElementById('nome').value.trim();
+            const contato = document.getElementById('contato').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+
+            // Validação simples para garantir que não estão vazios
+            if (nome === '' || contato === '' || mensagem === '') {
+                alert('Por favor, preencha todos os campos antes de enviar.');
+                return;
+            }
+
+            // Reseta o formulário e exibe a mensagem de sucesso
+            document.getElementById('formContato').reset();
+            const sucessoBox = document.getElementById('mensagemSucesso');
+            sucessoBox.style.display = 'block';
+
+            // Oculta a mensagem de sucesso após 5 segundos
+            setTimeout(function() {
+                sucessoBox.style.display = 'none';
+            }, 5000);
+        });
+    </script>
 
 </body>
 </html>

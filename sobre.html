@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre — Elite Alpha</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .sobre-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .manifesto-box {
+            background-color: #1a212e;
+            border: 1px solid #2a3447;
+            border-left: 4px solid #d4af37;
+            padding: 40px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+        }
+        .manifesto-box h2 {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .manifesto-box p {
+            color: #8b9bb4;
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .pilares-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .pilar-card {
+            background-color: #12151c;
+            border: 1px solid #2a3447;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: left;
+        }
+        .pilar-card h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .pilar-card h3 span {
+            color: #d4af37;
+        }
+        .pilar-card p {
+            color: #8b9bb4;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,27 +73,39 @@
     </header>
 
     <section class="hero" style="padding: 60px 20px;">
-        <h1>SOBRE A <span>ELITE ALPHA</span></h1>
-        <p>Resgatando a força, a honra, a liderança e a alta performance do homem moderno.</p>
+        <h1>QUEM <span>SOMOS</span></h1>
+        <p>Conheça os fundamentos, a filosofia e o propósito por trás da metodologia Elite Alpha.</p>
     </section>
 
-    <main style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
-        <h2 style="color: #ffffff; margin-bottom: 15px; font-size: 1.8rem;">O Manifesto</h2>
-        <p style="color: #c9d1d9; margin-bottom: 20px; line-height: 1.8;">
-            A Elite Alpha nasceu para combater a passividade, a desorganização e a falta de foco que afetam o homem moderno[cite: 1]. Não somos apenas um curso[cite: 1], somos um processo profundo de transformação pessoal, mental e profissional[cite: 1]. 
-        </p>
-        <p style="color: #c9d1d9; margin-bottom: 20px; line-height: 1.8;">
-            Nosso objetivo é criar uma jornada clara: o homem entra desorganizado, sem foco e sem disciplina, e sai com uma mentalidade forte, produtiva e implacável para conquistar resultados acima da média[cite: 1].
-        </p>
+    <div class="sobre-container">
+        
+        <!-- Manifesto / Visão Geral -->
+        <div class="manifesto-box">
+            <h2>O Manifesto Elite Alpha</h2>
+            <p>A <strong>Elite Alpha</strong> nasceu com uma missão clara: prover direcionamento estratégico, mentalidade de alta performance e suporte estruturado para homens que recusam a mediocridade e buscam excelência absoluta em todas as esferas da vida.</p>
+            <p>Em um mundo repleto de distrações e ruídos, acreditamos que o verdadeiro desenvolvimento exige disciplina férrea, inteligência emocional, blindagem pessoal e foco inegociável nos objetivos de longo prazo.</p>
+        </div>
 
-        <h3 style="color: #d4af37; margin: 30px 0 15px 0; font-size: 1.4rem;">Nossos Pilares Inegociáveis</h3>
-        <ul style="color: #c9d1d9; padding-left: 20px; line-height: 1.8;">
-            <li><strong>Mentalidade Forte e Inabalável:</strong> Controle emocional e eliminação de crenças limitantes[cite: 1].</li>
-            <li><strong>Disciplina Extrema:</strong> Criação de hábitos poderosos, consistência e rotinas de alta performance[cite: 1].</li>
-            <li><strong>Performance Física e Mental:</strong> Alinhamento entre corpo e mente para energia máxima[cite: 1].</li>
-            <li><strong>Evolução Financeira e Profissional:</strong> Planejamento estratégico de carreira e construção de riqueza[cite: 1].</li>
-        </ul>
-    </main>
+        <h3 style="color: #ffffff; font-size: 1.6rem; text-align: center; margin-bottom: 10px;">Nossos Pilares Fundamentais</h3>
+        <p style="color: #8b9bb4; text-align: center; margin-bottom: 30px;">Os princípios inegociáveis que sustentam nossa comunidade e metodologia.</p>
+
+        <!-- Grade de Pilares -->
+        <div class="pilares-grid">
+            <div class="pilar-card">
+                <h3><span>01.</span> Mentalidade</h3>
+                <p>Controle absoluto sobre os pensamentos, foco sob pressão e eliminação definitiva de crenças limitantes.</p>
+            </div>
+            <div class="pilar-card">
+                <h3><span>02.</span> Estratégia</h3>
+                <p>Tomada de decisão racional, planejamento de longo prazo e posicionamento de alto valor social e profissional.</p>
+            </div>
+            <div class="pilar-card">
+                <h3><span>03.</span> Blindagem</h3>
+                <p>Proteção patrimonial, segurança jurídica e resiliência diante de cenários de crise ou adversidades.</p>
+            </div>
+        </div>
+
+    </div>
 
     <footer>
         <p>&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
