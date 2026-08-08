@@ -1,28 +1,21 @@
-/* ==========================================
-   ESTILOS GLOBAIS - ELITE ALPHA
-   ========================================== */
-
+/* Reset e Configurações Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 0.3s ease; /* Transição suave global */
+    font-family: 'Arial', sans-serif;
 }
 
 body {
     background-color: #0d1117;
-    color: #ffffff;
+    color: #e6edf3;
     line-height: 1.6;
 }
 
-/* ==========================================
-   CABEÇALHO E NAVEGAÇÃO
-   ========================================== */
-
+/* Cabeçalho e Menu */
 header {
-    background-color: #12151c;
-    border-bottom: 1px solid #2a3447;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -32,152 +25,118 @@ header {
     z-index: 1000;
 }
 
-.logo {
+header .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    letter-spacing: 2px;
-    color: #ffffff;
-}
-
-.logo span {
-    color: #d4af37; /* Dourado Elite */
-}
-
-nav a {
-    color: #8b9bb4;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: 600;
-    font-size: 0.95rem;
-}
-
-nav a:hover, nav a.active {
     color: #d4af37;
-}
-
-/* ==========================================
-   HERO / SEÇÃO DE DESTAQUE
-   ========================================== */
-
-.hero {
-    background: linear-gradient(135deg, #12151c 0%, #1a212e 100%);
-    padding: 80px 20px;
-    text-align: center;
-    border-bottom: 1px solid #2a3447;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
-.hero h1 span {
+header nav a {
+    color: #8b9bb4;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
     color: #d4af37;
 }
 
+/* Seção Hero e Containers */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+    border-bottom: 1px solid #30363d;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
 .hero p {
-    color: #8b9bb4;
     font-size: 1.1rem;
+    color: #8b9bb4;
     max-width: 600px;
     margin: 0 auto 30px auto;
 }
 
-/* ==========================================
-   BOTÕES COM EFEITO DE ELEVAÇÃO
-   ========================================== */
-
-.btn-gold {
+.btn {
+    display: inline-block;
     background-color: #d4af37;
     color: #0d1117;
     padding: 12px 30px;
     border-radius: 4px;
-    font-weight: bold;
     text-decoration: none;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.btn-gold:hover {
-    background-color: #e5c158;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+.btn:hover {
+    background-color: #f1c40f;
 }
 
-/* ==========================================
-   CARDS COM EFEITO HOVER AVANÇADO
-   ========================================== */
-
-.card, .contato-card, .curso-card, .juridico-card {
-    background-color: #1a212e;
-    border: 1px solid #2a3447;
-    border-radius: 6px;
-    padding: 25px;
-    position: relative;
-    overflow: hidden;
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.card:hover, .contato-card:hover, .curso-card:hover, .juridico-card:hover {
-    border-color: #d4af37;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 10px rgba(212, 175, 55, 0.15);
-}
-
-/* ==========================================
-   RODAPÉ
-   ========================================== */
-
-footer {
-    background-color: #12151c;
-    border-top: 1px solid #2a3447;
-    text-align: center;
-    padding: 30px;
-    color: #8b9bb4;
-    font-size: 0.9rem;
-    margin-top: 60px;
-}
-
-/* ==========================================
-   MENU RESPONSIVO (MOBILE)
-   ========================================== */
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 1.8rem;
+.container h2, .container h1 {
     color: #ffffff;
-    background: none;
-    border: none;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 15px 20px;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
+/* FAQ / Seções */
+.faq-item {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
 
-    nav {
-        display: none;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #12151c;
-        border-bottom: 1px solid #2a3447;
-        flex-direction: column;
-        padding: 20px 0;
-        text-align: center;
-    }
+.faq-item h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
 
-    nav.active {
-        display: flex;
-    }
+.faq-item p {
+    color: #8b9bb4;
+}
 
-    nav a {
-        margin: 10px 0;
-        font-size: 1.1rem;
-    }
+/* Rodapé */
+footer {
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    color: #8b9bb4;
+}
+
+footer .social-links {
+    margin-bottom: 15px;
+}
+
+footer .social-links a {
+    color: #8b9bb4;
+    margin: 0 15px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #d4af37 !important;
+    transform: translateY(-2px);
+    display: inline-block;
 }
