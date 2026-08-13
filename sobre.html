@@ -6,10 +6,70 @@
     <title>Sobre — Elite Alpha</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .sobre-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .sobre-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .sobre-header h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .sobre-header h1 span {
+            color: #d4af37;
+        }
+        .sobre-header p {
+            color: #8b9bb4;
+            font-size: 1.1rem;
+        }
+        .manifesto-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .manifesto-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-left: 4px solid #d4af37;
+            padding: 30px;
+            border-radius: 6px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .manifesto-card:hover {
+            transform: translateY(-3px);
+            border-color: #d4af37;
+        }
+        .manifesto-card i {
+            color: #d4af37;
+            font-size: 1.8rem;
+            margin-top: 4px;
+        }
+        .manifesto-card h3 {
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+        .manifesto-card p {
+            color: #8b9bb4;
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">Elite Alpha</div>
+        <div class="logo">ELITE <span>ALPHA</span></div>
         <nav>
             <a href="index.html">Início</a>
             <a href="sobre.html" class="active">Sobre</a>
@@ -19,24 +79,49 @@
         </nav>
     </header>
 
-    <main class="container">
-        <h1>Sobre o Manifesto Elite Alpha</h1>
-        <p>Nascemos para resgatar os valores de honra, disciplina férrea, evolução contínua e blindagem mental. Acreditamos que o homem moderno deve ser forte, inteligente, estratégico e dono de suas próprias escolhas.</p>
-        <p>Nossa missão é fornecer as ferramentas intelectuais, físicas e financeiras para que você domine o seu destino.</p>
+    <main class="sobre-container">
+        <div class="sobre-header">
+            <h1>O MANIFESTO <span>ELITE ALPHA</span></h1>
+            <p>Os princípios inegociáveis que moldam a nossa mentalidade e conduzem ao topo.</p>
+        </div>
+
+        <div class="manifesto-grid">
+            <div class="manifesto-card">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h3>Honra e Disciplina Férrea</h3>
+                    <p>Nascemos para resgatar os valores de honra, disciplina férrea, evolução contínua e blindagem mental diante das adversidades do mundo moderno.</p>
+                </div>
+            </div>
+
+            <div class="manifesto-card">
+                <i class="fas fa-chess-king"></i>
+                <div>
+                    <h3>O Homem Estratégico</h3>
+                    <p>Acreditamos que o homem moderno deve ser forte, inteligente, estratégico e dono absoluto de suas próprias escolhas, recusando o padrão da mediocridade.</p>
+                </div>
+            </div>
+
+            <div class="manifesto-card">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                    <h3>Domínio do Destino</h3>
+                    <p>Nossa missão é fornecer as ferramentas intelectuais, físicas, financeiras e jurídicas necessárias para que você assuma o controle do seu destino.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <div class="social-links" style="margin-bottom: 15px;">
-            <a href="https://instagram.com/elitealphaoficial" target="_blank" style="color: #8b9bb4; margin: 0 12px; font-size: 1.2rem; text-decoration: none;" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://tiktok.com/@elitealphaoficial" target="_blank" style="color: #8b9bb4; margin: 0 12px; font-size: 1.2rem; text-decoration: none;" title="TikTok">
-                <i class="fab fa-tiktok"></i>
-            </a>
-            <a href="https://youtube.com/@elitealphaoficial" target="_blank" style="color: #8b9bb4; margin: 0 12px; font-size: 1.2rem; text-decoration: none;" title="YouTube">
-                <i class="fab fa-youtube"></i>
-            </a>
+    <!-- Rodapé Padronizado -->
+    <footer style="background-color: #161b22; border-top: 1px solid #30363d; text-align: center; padding: 40px 20px; margin-top: 60px; color: #8b9bb4;">
+        <div class="social-links" style="margin-bottom: 20px;">
+            <a href="https://instagram.com/elitealphaoficial" target="_blank" style="color: #d4af37; margin: 0 12px; font-size: 1.5rem;" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@elitealphaoficial" target="_blank" style="color: #d4af37; margin: 0 12px; font-size: 1.5rem;" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@elitealphaoficial" target="_blank" style="color: #d4af37; margin: 0 15px; font-size: 1.5rem;" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:elitealpha.manoficial@gmail.com" style="color: #d4af37; margin: 0 12px; font-size: 1.5rem;" title="E-mail"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/5531992068281" target="_blank" style="color: #d4af37; margin: 0 12px; font-size: 1.5rem;" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
+        <p style="color: #e6edf3; margin-bottom: 10px;"><strong>Contato:</strong> elitealpha.manoficial@gmail.com</p>
         <p>&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
     </footer>
 </body>

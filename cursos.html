@@ -3,75 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos — Elite Alpha</title>
+    <title>Formações Elite Alpha | Domine o Seu Destino</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .cursos-container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .curso-destaque {
-            background-color: #1a212e;
-            border: 1px solid #d4af37;
-            padding: 35px;
-            border-radius: 6px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
-        }
-        .curso-destaque h2 {
-            color: #d4af37;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-        .curso-destaque p {
-            color: #8b9bb4;
-            font-size: 1.05rem;
-            margin-bottom: 25px;
-        }
-        .corebyte-section {
-            background: linear-gradient(135deg, #12151c 0%, #1a212e 100%);
-            border: 1px solid #2a3447;
-            padding: 35px;
-            border-radius: 6px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .corebyte-section h3 {
-            color: #ffffff;
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-        }
-        .corebyte-section h3 span {
-            color: #d4af37;
-        }
-        .corebyte-section p {
-            color: #8b9bb4;
-            font-size: 1rem;
-            max-width: 700px;
-            margin: 0 auto 25px auto;
-        }
-        .modulos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .modulo-card {
-            background-color: #12151c;
-            border: 1px solid #2a3447;
-            padding: 20px;
-            border-radius: 4px;
-        }
-        .modulo-card h4 {
-            color: #ffffff;
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-        }
-        .modulo-card p {
-            color: #8b9bb4;
-            font-size: 0.9rem;
-        }
+        /* Estilos específicos para esta página de alta conversão */
+        .hero-section { text-align: center; padding: 80px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #0d1117; }
+        .hero-section h1 { font-size: 3rem; color: #fff; margin-bottom: 20px; }
+        .hero-section span { color: #d4af37; }
+        
+        .cta-box { max-width: 800px; margin: -50px auto 50px auto; background: #161b22; padding: 40px; border: 2px solid #d4af37; border-radius: 10px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        
+        .beneficios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto 60px auto; padding: 0 20px; }
+        .beneficio-card { background: #1a212e; padding: 30px; border-radius: 8px; border: 1px solid #30363d; transition: 0.3s; }
+        .beneficio-card:hover { border-color: #d4af37; }
+        .beneficio-card i { color: #d4af37; font-size: 2rem; margin-bottom: 20px; }
+        
+        .btn-gold-cta { background: #d4af37; color: #000; padding: 20px 40px; font-weight: 800; font-size: 1.2rem; border-radius: 5px; text-decoration: none; display: inline-block; transition: 0.3s; }
+        .btn-gold-cta:hover { background: #fff; box-shadow: 0 0 20px #d4af37; }
+
+        footer { background: #0d1117; border-top: 1px solid #30363d; padding: 50px 20px; text-align: center; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #d4af37; font-size: 1.6rem; margin: 0 15px; }
     </style>
 </head>
 <body>
@@ -79,69 +32,53 @@
     <header>
         <div class="logo">ELITE <span>ALPHA</span></div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Início</a>
             <a href="sobre.html">Sobre</a>
-            <a href="juridico.html">Orientações Jurídicas</a>
+            <a href="juridico.html">Jurídico</a>
             <a href="cursos.html" class="active">Cursos</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <section class="hero" style="padding: 60px 20px;">
-        <h1>FORMAÇÕES E <span>TREINAMENTOS</span></h1>
-        <p>Conteúdos estruturados para transformar sua mentalidade, blindar sua vida e elevar seus resultados ao nível de elite.</p>
+    <section class="hero-section">
+        <h1>DOMINE O SEU <span>DESTINO</span></h1>
+        <p style="font-size: 1.2rem; color: #8b9bb4;">Não aceite a mediocridade. Construa a versão mais forte de si mesmo com o protocolo Elite Alpha.</p>
     </section>
 
-    <div class="cursos-container">
-        
-        <!-- Curso Principal com Link da Hotmart -->
-        <div class="curso-destaque">
-            <h2>Método Elite Alpha (Formação Completa)</h2>
-            <p>O treinamento definitivo focado em mentalidade de alta performance, estratégia, posicionamento e blindagem pessoal. Do Módulo 0 ao Módulo 9 com acesso completo à metodologia.</p>
-            
-            <a href="https://go.hotmart.com/B106042773F" target="_blank" class="btn-gold" style="text-align: center; display: block; margin-top: 20px; text-decoration: none;">GARANTIR MINHA VAGA NA HOTMART</a>
+    <div class="cta-box">
+        <h2 style="color: #fff; margin-bottom: 20px;">Método Elite Alpha</h2>
+        <p style="color: #8b9bb4; margin-bottom: 30px;">O sistema completo para quem busca blindagem mental, autoridade profissional, gestão patrimonial e performance física inabalável.</p>
+        <a href="https://go.hotmart.com/B106042773F" target="_blank" class="btn-gold-cta">GARANTIR MINHA VAGA NA ELITE</a>
+    </div>
+
+    <div class="beneficios-grid">
+        <div class="beneficio-card">
+            <i class="fas fa-brain"></i>
+            <h3>Mentalidade de Elite</h3>
+            <p>Destrave seu potencial, elimine crenças limitantes e desenvolva uma resiliência inabalável para vencer em qualquer cenário.</p>
         </div>
-
-        <!-- Seção Integrada Corebyte Academy -->
-        <div class="corebyte-section">
-            <h3>Vitrine de Cursos <span>Corebyte Academy</span></h3>
-            <p>Explore também a plataforma parceira e acesse formações completas em tecnologia, desenvolvimento e inovação digital.</p>
-            <a href="https://corebytetech.com.br/courses.html" target="_blank" class="btn-gold" style="text-decoration: none; display: inline-block;">ACESSAR COREBYTE ACADEMY</a>
+        <div class="beneficio-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Blindagem Estratégica</h3>
+            <p>Conhecimento prático para proteger seu patrimônio, seus direitos e sua família com inteligência e antecipação de riscos.</p>
         </div>
-
-        <h3 style="color: #ffffff; margin-bottom: 20px; font-size: 1.5rem; text-align: center;">Grade Curricular do Treinamento</h3>
-
-        <div class="modulos-grid">
-            <div class="modulo-card">
-                <h4>Módulo 01</h4>
-                <p>Fundamentos da Mentalidade de Elite e quebra de crenças limitantes.</p>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 02</h4>
-                <p>Estratégias avançadas de posicionamento e alta performance pessoal.</p>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 03</h4>
-                <p>Inteligência emocional e blindagem contra interferências externas.</p>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 04</h4>
-                <p>Gestão de riscos, segurança jurídica e proteção patrimonial.</p>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 05</h4>
-                <p>Liderança, tomada de decisão sob pressão e foco estratégico.</p>
-            </div>
-            <div class="modulo-card">
-                <h4>Módulo 06 a 09</h4>
-                <p>Consolidação de hábitos de alta performance e expansão contínua.</p>
-            </div>
+        <div class="beneficio-card">
+            <i class="fas fa-dumbbell"></i>
+            <h3>Disciplina de Atleta</h3>
+            <p>Domine seu corpo, aumente sua energia e viva sob o código de alta performance, integrando mente e físico como um só.</p>
         </div>
-
     </div>
 
     <footer>
-        <p>&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="https://instagram.com/elitealphaoficial" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@elitealphaoficial" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@elitealphaoficial" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:elitealpha.manoficial@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/5531992068281" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p style="color: #8b9bb4;"><strong>Contato Direto:</strong> elitealpha.manoficial@gmail.com</p>
+        <p style="margin-top: 15px; color: #586069;">&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
     </footer>
 
 </body>
