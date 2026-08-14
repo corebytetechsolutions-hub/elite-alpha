@@ -5,46 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orientações Jurídicas — Elite Alpha</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Ícones FontAwesome para Redes Sociais e Contato -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .juridico-container {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-        .aviso-legal-box {
-            background-color: #1a212e;
-            border: 1px solid #2a3447;
-            border-left: 4px solid #d4af37;
-            padding: 25px;
-            border-radius: 6px;
-            margin-bottom: 40px;
-            color: #8b9bb4;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        .juridico-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-        .juridico-card {
-            background-color: #1a212e;
-            border: 1px solid #2a3447;
-            padding: 30px;
-            border-radius: 6px;
-        }
-        .juridico-card h3 {
-            color: #d4af37;
-            font-size: 1.25rem;
-            margin-bottom: 12px;
-        }
-        .juridico-card p {
-            color: #8b9bb4;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
+        .juridico-container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        
+        /* Regras de Alinhamento Solicitadas */
+        h1, h2, h3 { text-align: justify; text-align-last: center; color: #ffffff; }
+        p { text-align: center; color: #8b9bb4; line-height: 1.7; }
+        
+        .hero-juridico { text-align: center; padding: 70px 20px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), #0d1117; border-bottom: 1px solid #30363d; }
+        .hero-juridico h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        .hero-juridico h1 span { color: #d4af37; }
+        .hero-juridico p { font-size: 1.15rem; max-width: 800px; margin: 0 auto; }
+        
+        .aviso-estrategico-box { background-color: #161b22; border: 2px solid #d4af37; padding: 40px; border-radius: 8px; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1); }
+        .aviso-estrategico-box h3 { font-size: 1.6rem; margin-bottom: 15px; color: #d4af37; }
+        
+        .juridico-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .juridico-card { background-color: #161b22; border: 1px solid #30363d; padding: 35px 30px; border-radius: 8px; transition: 0.3s; }
+        .juridico-card:hover { transform: translateY(-5px); border-color: #d4af37; }
+        .juridico-card i { color: #d4af37; font-size: 2.2rem; margin-bottom: 20px; display: block; text-align: center; }
+        
+        footer { background-color: #0d1117; border-top: 1px solid #30363d; text-align: center; padding: 40px 20px; margin-top: 80px; color: #8b9bb4; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #d4af37; margin: 0 12px; font-size: 1.5rem; transition: 0.3s; }
+        .footer-links a:hover { color: #ffffff; }
     </style>
 </head>
 <body>
@@ -52,70 +37,59 @@
     <header>
         <div class="logo">ELITE <span>ALPHA</span></div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Início</a>
             <a href="sobre.html">Sobre</a>
-            <a href="juridico.html" class="active">Orientações Jurídicas</a>
+            <a href="juridico.html" class="active">Jurídico</a>
             <a href="cursos.html">Cursos</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <section class="hero" style="padding: 60px 20px;">
-        <h1>DIRECIONAMENTO E <span>SEGURANÇA</span></h1>
-        <p>Informações estruturadas e suporte de conscientização voltados para a blindagem e proteção masculina.</p>
+    <section class="hero-juridico">
+        <h1>DIRECIONAMENTO E <span>PROTEÇÃO JURÍDICA</span></h1>
+        <p>Se você se sente injustiçado, nós estamos aqui para orientar, estruturar seus passos e indicar advogados que lutam verdadeiramente pela causa.</p>
     </section>
 
     <div class="juridico-container">
         
-        <!-- Aviso de Isenção / Caráter Educacional -->
-        <div class="aviso-legal-box">
-            <strong style="color: #ffffff; display: block; margin-bottom: 8px;">Aviso Importante:</strong>
-            Os conteúdos e diretrizes apresentados nesta seção possuem caráter estritamente educacional, informativo e de conscientização estratégica. Eles não substituem a consultoria jurídica formal prestada por um advogado devidamente inscrito na OAB.
+        <div class="aviso-estrategico-box">
+            <h3><i class="fas fa-shield-alt"></i> Evite Perder Tempo e Dinheiro</h3>
+            <p>Antes de entrar em contato diretamente com advogados e se perder em burocracias jurídicas complexas, analise nossas orientações. Ajudamos homens a entenderem seus cenários, mantendo a sobriedade e a estratégia para não desperdiçar recursos financeiros com caminhos errados.</p>
         </div>
 
-        <h3 style="color: #ffffff; font-size: 1.6rem; margin-bottom: 25px; text-align: center;">Áreas de Foco e Conscientização</h3>
+        <h3 style="margin-bottom: 30px;">Áreas de Atuação e Apoio</h3>
 
-        <!-- Grid de Tópicos Jurídicos -->
         <div class="juridico-grid">
             <div class="juridico-card">
+                <i class="fas fa-landmark"></i>
                 <h3>Blindagem Patrimonial</h3>
                 <p>Estratégias preventivas e conscientização sobre a gestão de riscos e proteção de bens em cenários de reestruturação familiar ou empresarial.</p>
             </div>
+            
             <div class="juridico-card">
+                <i class="fas fa-balance-scale"></i>
                 <h3>Apoio em Processos de Divórcio</h3>
                 <p>Direcionamento focado em manter a sobriedade emocional, resguardar direitos fundamentais e agir de maneira racional diante de litígios.</p>
             </div>
+            
             <div class="juridico-card">
+                <i class="fas fa-child"></i>
                 <h3>Alienação Parental</h3>
                 <p>Conscientização e amparo informacional para a defesa rigorosa do convívio familiar equilibrado e do vínculo saudável com os filhos.</p>
             </div>
         </div>
-
     </div>
 
-    <!-- Rodapé com Redes Sociais e Contato Integrados -->
     <footer>
-        <div class="social-links" style="margin-bottom: 20px;">
-            <!-- Redes Sociais -->
-            <a href="https://instagram.com/elitealphaoficial" target="_blank" title="Instagram Oficial">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://tiktok.com/@elitealphaoficial" target="_blank" title="TikTok Oficial">
-                <i class="fab fa-tiktok"></i>
-            </a>
-            <a href="https://youtube.com/@elitealphaoficial" target="_blank" title="YouTube Oficial">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <!-- Contato Direto -->
-            <a href="mailto:elitealpha.manoficial@gmail.com" title="E-mail Oficial">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://wa.me/5531992068281" target="_blank" title="WhatsApp Oficial">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+        <div class="footer-links">
+            <a href="https://instagram.com/elitealphaoficial" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@elitealphaoficial" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@elitealphaoficial" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:elitealpha.manoficial@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/5531992068281" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <p><strong>Contato:</strong> (31) 99206-8281 | elitealpha.manoficial@gmail.com</p>
-        <p style="margin-top: 10px;">&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
+        <p><strong>Contato:</strong> elitealpha.manoficial@gmail.com </p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">&copy; 2026 Elite Alpha. Todos os direitos reservados.</p>
     </footer>
 
 </body>
